@@ -1,0 +1,44 @@
+Gracz-człowiek
+1.Wysyla do serwera Q/q (quit) lub strzałki
+2.Nie porusza sie przez 1sekunde to wysyla STOP (stoi w miejscu)
+3.Wyswietlanie:
+-Wyswietlenie mapy z podanego przez serwer lewego gornego x,y kwadratu 5x5
+-zapisanie campsite'u jesli byl juz widoczny do zmiennych x,y
+-wyswietlenie ze to czlowiek
+-obecna pozycja
+-smierci
+-gold ile ma ile w bazie
+-podstawowa legenda
+-numer rundy(przekazuje serwer)
+
+
+
+Gracz-bot
+1.Wybiera z randa liczbe od 0 do 3 gdzie ma pojsc bot
+2.Bestia w zasiegu idzie w innym kierunku niz ona jest
+3.Wyswietlanie:
+-Wyswietlenie mapy z podanego przez serwer lewego gornego x,y kwadratu 5x5
+-zapisanie campsite'u jesli byl juz widoczny do zmiennych x,y
+-wyswietlenie ze to CPU
+-obecna pozycja
+-smierci
+-gold ile ma ile w bazie
+-podstawowa legenda
+-numer rundy(przekazuje serwer)
+
+Serwer
+1.Odpala gracza/bota nadaje mu kordy startu i respawnu, wysyla mu mape w postaci 5x5 z X,y gornego lewego rogu
+2.Na start zapisuje do mapy okreslona liczbe monet,skarbu.
+3.Losuje kordy kampusu.
+4.Dodaje boty/ludzi do gry ale jesli wiecej niz 4 to odmawia i mowi ze serwer jest pelny
+5.Dodaje na start okreslona liczbe bestii
+-Bestia:
+-widzi gracza to idzie do w strone niego
+-ma okreslone od startu kordy na ktorych bedzie stac 
+-nie widzi gracza cofa sie
+6.Serwer sprawdza czy kordy bestii i gracza sa takie same jesli tak to zabija gracza i ustawia w miejscu pozostalosci
+7.Jesli dwoch graczy sie zderzy dostaja respawn i zostaje w miescju ich spotkania pozostalosci
+8.Obsluguje klawisze Q/q- zakonczenie gry c/t/T - dodanie skarbu B/b - dodanie bestii
+9.Zaczyna od zaalokowania pamieci na mape wczytana z pliku i okreslenie jej rozmiarow
+
+
